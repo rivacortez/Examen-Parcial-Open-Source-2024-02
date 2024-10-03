@@ -34,7 +34,7 @@
 
   "eventSummary": {
     "registeredAttendees": "Asistentes Registrados",
-    "attendancePercentage": "Porcentaje de Asistencia"
+    "averageRating": "Promedio de calificacion"
   },
   "rating": {
     "title": "Calificación del Evento",

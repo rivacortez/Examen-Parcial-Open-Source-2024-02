@@ -33,7 +33,7 @@
   },
   "eventSummary": {
     "registeredAttendees": "Registered Attendees",
-    "attendancePercentage": "Attendance Percentage"
+    "averageRating": "Average Rating."
   },
   "rating": {
     "title": "Event Rating",
