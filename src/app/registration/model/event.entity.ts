@@ -1,3 +1,14 @@
+/**
+ * Event entity
+ * @class Event
+ * @description
+ * This class is used to represent an event.
+ * @property id: number - The id of the event.
+ * @property name: string - The name of the event.
+ * @property description: string - The description of the event.
+ * @property scheduledAt: Date - The scheduled date of the event.
+ * @property attendees: any[] - The list of attendees for the event.
+ */
 
 export class Event {
   id: number;

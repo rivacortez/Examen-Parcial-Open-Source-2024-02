@@ -1,3 +1,15 @@
+/**
+ * Attendee entity
+ * @class Attendee
+ * @description
+ * This class is used to represent an attendee of an event.
+ * @property id: number - The id of the attendee.
+ * @property firstName: string - The first name of the attendee.
+ * @property lastName: string - The last name of the attendee.
+ * @property eventId: number - The id of the event the attendee is attending.
+ * @property ticketIdentifier: string - The ticket identifier of the attendee.
+ * @property checkedInAt: Date \| null - The check-in date of the attendee.
+ */
 
 export class Attendee {
   id: number;

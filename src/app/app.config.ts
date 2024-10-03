@@ -6,7 +6,7 @@ import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-// Función para cargar archivos de traducción desde el servidor
+// HttpLoaderFactory function
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -24,8 +24,8 @@ export const appConfig: ApplicationConfig = {
           useFactory: HttpLoaderFactory,
           deps: [HttpClient]
         },
-        defaultLanguage: 'en',  // Establecer idioma por defecto aquí
-        useDefaultLang: true    // Garantizar uso de idioma predeterminado
+        defaultLanguage: 'en',
+        useDefaultLang: true
       })
     )
   ]
