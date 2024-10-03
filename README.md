@@ -1,34 +1,41 @@
-# Eventify Application
+# Eventify
 
-## Description
-Eventify is a web application designed to manage and display events. It allows users to view registered events, check-in attendees, and display event summaries. The application is built using Angular and Angular Material for a consistent and responsive user interface.
+## Summary
+Eventify project, illustrating the management of events, attendees, and ratings, with internationalization support for English and Spanish languages.
 
 ## Features
-- **Home Page**: Displays a list of registered events with a summary of each event.
-- **Event Summary**: Shows detailed information about each event, including the number of registered attendees and the attendance percentage.
-- **Check-In**: Allows users to check-in attendees by validating their ticket identifiers.
-- **Multilingual Support**: Supports multiple languages for a better user experience.
+The project includes the following features:
+- Display and manage events.
+- Check-in attendees for events.
+- Rate events attended by users.
+- Internationalization (i18n) for English and Spanish languages.
+- Environment configuration for API endpoints.
 
-## Technologies Used
+## Frameworks and Libraries
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+- It also uses the following libraries:
+  - [Angular Material](https://material.angular.io/) version 12.2.7.
+  - ngx-translate for internationalization.
 
-### Angular
-- **Angular CLI**: Used to generate components, services, and other Angular features.
-- **Routing**: Configured using `@angular/router` to navigate between different pages like Home, Check-In, and Page Not Found.
+## Development server
 
-### Angular Material
-- **Installation**: Installed using `ng add @angular/material`.
-- **Components Used**:
-  - `MatToolbarModule` for the toolbar.
-  - `MatCardModule` for displaying event summaries.
-  - `MatGridListModule` for the grid layout of events.
-  - `MatButtonModule` for buttons.
-  - `MatFormFieldModule` and `MatInputModule` for form fields in the Check-In component.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### i18n (Internationalization)
-- **ngx-translate**: Used for translating the application into multiple languages.
-  - **Installation**: Installed using `npm install @ngx-translate/core @ngx-translate/http-loader`.
-  - **Configuration**: Configured to load translation files from the `assets/i18n` directory.
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Application Information
+Eventify is an application designed to manage events, attendees, and ratings. It provides functionalities to display and manage events, check-in attendees, and rate events. The application supports internationalization for English and Spanish languages and is configured to work with various API endpoints.
 
 ## Author
-- **Name**: Ely Rivaldo Cortez Flores
-- **Code**: U202215313
+Ely Rivaldo Cortez Flores
+Código: U202215313
