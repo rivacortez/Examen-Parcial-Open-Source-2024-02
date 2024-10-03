@@ -1,0 +1,18 @@
+<div class="not-found-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>404 - Page Not Found</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>Sorry, the page <strong>{{ router.url }}</strong> could not be found.</p>
+      <p>It seems the path you entered is not valid.</p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="navigateHome()">
+        Go to Home
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

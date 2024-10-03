@@ -1,0 +1,15 @@
+<mat-toolbar class="mat-toolbar" color="primary">
+  <div class="toolbar-content">
+
+
+    <img *ngIf="logoUrl" [src]="logoUrl" alt="Eventify logo" class="logo" />
+
+    <span class="certification">ISO 27001:2022 certified</span>
+    <div class="spacer"></div>
+    <button mat-button routerLink="/home">{{ 'toolbar.home' | translate }}</button>
+    <button mat-button routerLink="/engagement/ratings/new">{{ 'toolbar.checkIn' | translate }}</button>
+
+
+    <span><app-language-switcher></app-language-switcher></span>
+  </div>
+</mat-toolbar>

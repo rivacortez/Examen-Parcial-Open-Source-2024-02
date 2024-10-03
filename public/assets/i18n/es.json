@@ -1,0 +1,50 @@
+{
+  "footer": {
+    "phrase": "Bienvenido a Eventify"
+  },
+  "notfound": {
+    "notfoundTitle": "Página No Encontrada",
+    "backHome": "Ir a inicio"
+  },
+  "toolbar": {
+    "home": "Inicio",
+    "checkIn": "Eventos Registrados"
+  },
+  "CheckIn": {
+    "title": "Registro",
+    "eventCheckIn": "Registro de Evento",
+    "ticketValidation": "Validación de Ticket",
+    "ticketIdentifier": "Identificador de Ticket",
+    "checkInButton": "Registrar",
+    "invalidTicket": "Identificador de Ticket Inválido",
+    "alreadyCheckedIn": "Ya Registrado",
+    "errorOccurred": "Ocurrió un error durante la validación del ticket",
+    "eventId": "Id del Evento",
+    "eventName": "Nombre del Evento",
+    "eventDescription": "Descripción del Evento",
+    "attendeeFirstName": "Nombre del Asistente",
+    "attendeeLastName": "Apellido del Asistente",
+    "checkedInAt": "Registrado En"
+  },
+  "home": {
+    "title": "Inicio",
+    "welcome": "Bienvenido a Eventify",
+    "registered": "Eventos registrados"
+  },
+
+  "eventSummary": {
+    "registeredAttendees": "Asistentes Registrados",
+    "attendancePercentage": "Porcentaje de Asistencia"
+  },
+  "rating": {
+    "title": "Calificación del Evento",
+    "addRating": "Agrega una Calificación para el Evento al que asististe",
+    "ticketIdentifier": "Identificador de Ticket",
+    "rating": "Calificación",
+    "rateEvent": "Calificar Evento",
+    "success": "Evento calificado con éxito",
+    "invalidTicket": "Identificador de Ticket Inválido",
+    "alreadyRated": "Ya has calificado este evento",
+    "notAttended": "Solo puedes calificar eventos a los que has asistido"
+  }
+}

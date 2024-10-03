@@ -1,0 +1,23 @@
+<div class="check-in-container">
+  <h1>{{ 'CheckIn.title' | translate }}</h1>
+  <section class="ticket-validation">
+    <h2>{{ 'CheckIn.ticketValidation' | translate }}</h2>
+    <form [formGroup]="checkInForm" (ngSubmit)="onCheckIn()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>{{ 'CheckIn.ticketIdentifier' | translate }}</mat-label>
+        <input matInput formControlName="ticketIdentifier" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">{{ 'CheckIn.checkInButton' | translate }}</button>
+    </form>
+    <div *ngIf="resultMessage" class="result-message">{{ resultMessage | translate }}</div>
+    <div *ngIf="attendeeDetails" class="attendee-details">
+      <p>{{ 'CheckIn.eventId' | translate }}: {{ attendeeDetails.eventId }}</p>
+      <p>{{ 'CheckIn.eventName' | translate }}: {{ attendeeDetails.eventName }}</p>
+      <p>{{ 'CheckIn.eventDescription' | translate }}: {{ attendeeDetails.eventDescription }}</p>
+      <p>{{ 'CheckIn.attendeeFirstName' | translate }}: {{ attendeeDetails.firstName }}</p>
+      <p>{{ 'CheckIn.attendeeLastName' | translate }}: {{ attendeeDetails.lastName }}</p>
+      <p>{{ 'CheckIn.checkedInAt  ' | translate }}: {{ attendeeDetails.checkedInAt }}</p>
+    </div>
+  </section>
+</div>
+

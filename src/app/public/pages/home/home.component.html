@@ -1,0 +1,14 @@
+<div class="home-container">
+  <h1>{{ 'home.title' | translate }}</h1>
+  <p>{{ 'home.welcome' | translate }}</p>
+
+  <h2>{{ 'home.registered' | translate }}</h2>
+
+  <div class="grid-container">
+    <mat-grid-list cols="2" rowHeight="1:1" gutterSize="16px">
+      <mat-grid-tile *ngFor="let event of events" class="event-tile">
+        <app-event-summary [event]="event"></app-event-summary>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

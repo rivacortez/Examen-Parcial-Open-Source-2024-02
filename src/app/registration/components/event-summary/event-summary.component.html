@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ event.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ event.description }}</p>
+  </mat-card-content>
+  <mat-card-footer>
+    <p>{{ 'eventSummary.registeredAttendees' | translate }}: {{ registeredAttendees }}</p>
+    <p>{{ 'eventSummary.averageRating' | translate }}: {{ averageRating }}</p>
+  </mat-card-footer>
+</mat-card>

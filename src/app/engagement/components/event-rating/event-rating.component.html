@@ -1,0 +1,19 @@
+<div class="rating-container">
+  <h1>{{ 'rating.title' | translate }}</h1>
+  <section class="add-rating">
+    <h2>{{ 'rating.addRating' | translate }}</h2>
+    <form [formGroup]="ratingForm" (ngSubmit)="onRateEvent()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>{{ 'rating.ticketIdentifier' | translate }}</mat-label>
+        <input matInput formControlName="ticketIdentifier" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>{{ 'rating.rating' | translate }}</mat-label>
+        <input matInput type="number" formControlName="rating" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">{{ 'rating.rateEvent' | translate }}</button>
+    </form>
+    <div *ngIf="resultMessage" class="result-message">{{ resultMessage | translate }}</div>
+  </section>
+</div>
+

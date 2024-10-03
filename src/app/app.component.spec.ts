@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'upc2402si729eau202215313' title`, () => {
+  it(`should have the 'Eventify' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('upc2402si729eau202215313');
+    expect(app.title).toEqual('Eventify');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, upc2402si729eau202215313');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Eventify');
   });
 });
